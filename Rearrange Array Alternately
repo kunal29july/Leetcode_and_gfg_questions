@@ -1,0 +1,19 @@
+#Rearrange Array Alternately(python)
+    def rearrange(self,arr, n): 
+        res=[]
+        left=0
+        right=n-1
+        
+        while(right>=left):
+            res.append(arr[right])
+            right=right-1
+            if (right< left):
+                break
+            res.append(arr[left])
+            left=left+1
+        #print(res)
+        
+        
+        for i in range (len((res))):
+            arr[i]=res[i]
+        return(arr)
