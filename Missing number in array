@@ -1,0 +1,9 @@
+#missing number in array
+def MissingNumber(array,n):
+    x,y=0,0 
+    
+    for i in array:
+        x=i+ x
+    
+    y=n*(n+1)/2
+    return int(y-x)
