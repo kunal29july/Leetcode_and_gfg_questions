@@ -1,0 +1,21 @@
+def sort012(self,arr,n):
+        l=0
+        m=0
+        h=n-1
+        
+        while(m<=h):
+            if (arr[m]==0):
+                temp=arr[m]
+                arr[m]=arr[l]
+                arr[l]=temp
+                l=l+1
+                m=m+1
+            else:
+                if(arr[m]==1):
+                    m=m+1
+                else:
+                    temp=arr[m]
+                    arr[m]=arr[h]
+                    arr[h]=temp
+                    h=h-1
+        return(arr)
