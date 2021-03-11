@@ -1,0 +1,16 @@
+def transitionPoint(arr, n):
+    d={}
+    for i in arr:
+        if i not in d:
+            d[i]=1
+        else:
+            d[i]=d[i]+1
+    #print(d)
+    
+    if 0 not in d:
+        return(0)
+    else:
+        if 1 not in d:
+            return(-1)
+        else:
+            return(d[0])
