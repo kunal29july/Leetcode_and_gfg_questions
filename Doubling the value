@@ -1,0 +1,7 @@
+
+class Solution:
+    def solve(self,n : int, a : list, b : int):
+        for i in range (len(a)):
+            if a[i]==b:
+                b=b+b
+        return(b)
