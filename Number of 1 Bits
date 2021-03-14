@@ -1,0 +1,18 @@
+'''
+Input:
+N = 6
+Output:
+2
+Explanation:
+Binary representation is '110' 
+So the count of the set bit is 2.
+'''
+#logn approch
+class Solution:
+	def setBits(self, N):
+		# code here
+		c=0
+		while(N):
+		    N=N&(N-1)
+		    c=c+1
+		return(c)
