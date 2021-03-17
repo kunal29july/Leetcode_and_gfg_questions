@@ -1,0 +1,14 @@
+#Given a list of N words. Count the number of words that appear exactly twice in the list.
+
+def countWords(self,List, n):
+        d={}
+        for i in range (len(List)):
+            if List[i] not in d:
+                d[List[i]]=1
+            else:
+                 d[List[i]]=d[List[i]]+1
+        count=0    
+        for i in set(List):
+            if d[i]==2:
+                count=count+1
+        return(count)
