@@ -1,0 +1,10 @@
+    def reverseWords(self,S):
+        words=S.split(".")
+        #print(words)
+        res=[]
+        for i in range(len(words)-1,-1,-1):
+            #print(words[i])
+            res.append(words[i])
+        #print(res)
+        output=".".join(res)
+        return(output)
