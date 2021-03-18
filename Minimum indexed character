@@ -1,0 +1,23 @@
+'''
+Given a string str and another string patt. Find the character in patt that is present at the minimum index in str.
+ 
+
+Example 1:
+
+Input: str = "zsyle", patt = "bjz"
+Output: "z"
+Example 2:
+
+Input: str = "anskg", patt = "me"
+Output: "$"
+'''
+def printMinIndexChar(self, str ,patt):
+		d={}
+		for i in range (len(str)):
+		    if i not in d:
+		        d[str[i]]=i
+		
+		for i in range (len(str)):
+		    if str[i] in patt:
+		        return(str[i])
+		return("$")
