@@ -1,0 +1,6 @@
+def removeDups(self, S):
+	    res=[]
+	    for i in S:
+	        if i not in res:
+	            res.append(i)
+	    return("".join(res))
