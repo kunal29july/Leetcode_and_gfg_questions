@@ -1,0 +1,29 @@
+our task  is to implement the function atoi. The function takes a string(str) as argument and converts it to an integer and returns it.
+
+Example 1:
+
+Input:
+str = 123
+Output: 123
+
+Example 2:
+
+Input:
+str = 21a
+Output: -1
+Explanation: Output is -1 as all
+characters are not digit only.
+Your Task:
+Complete the function atoi() which takes a string as input parameter and returns integer value of it. if the input string is not a numerical string then returns 1..
+
+def atoi(self,string): 
+        w=""
+        for i in string:
+            w=w+i
+    
+        
+        ww=["1","2","3","4","5","6","7","8","9","0","-"]
+        for i in w:
+            if i not in ww:
+                return(-1)
+        return(w)
